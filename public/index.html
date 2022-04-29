@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Functoon do modal -->
+    <script>
+        $(function () {
+            $("#criar-modal").click(function () {
+                $("#exampleModalCenter").modal();
+            });
+        });
+    </script>
+
+    <header class="site-header">
+        <div class="site-identity">
+            <a href="index.html"><img src="logoHeader.png" alt="Site Name" /></a>
+
+        </div>
+        <nav class="site-navigation">
+            <ul class="nav">
+                <li>
+                    <button onclick="window.location.href='quiz.html';" type="button" id="btnQuiz">Acessar o quiz</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="upperName">
+        <h1>GLOSSÁRIO RETHINKER</h1>
+        <h2>Seja bem-vindx ao Glossário Rethinker. Aqui você pode aprender e se divertir com os termos de todas as
+            áreas! </h2>
+    </div>
+
+
+    <div class="bodyBody">
+        <h1 class="bodyTitle"> OS TERMOS DE METODOLOGIA ÁGIL</h1>
+        <div class="wordsClass">
+            <div class="titleSubtitle">
+                <h2 class="wordTitle">SCRUM</h2>
+                <p class="oque">o que é?</p>
+            </div>
+            <!-- <p class="wordSubTitle">o que é?</p>    -->
+            <div class="words">
+                <ul>
+                    <li id="li">
+                        <button id="criar-modal" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Scrum
+                          </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-references">
+            <img src="./Icone_chapeuzinho.png" alt="" class="image-footer">
+            <p id="reference">@2022. Rethink Academy - Criado por Squad QUIZ RA</p>
+        </div>
+        <div class="logo">
+            <img src="./logo.png" alt="Rethink" href="">
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Scrum</h5>
+                </div>
+                <div class="modal-body">
+                    O Scrum é uma estrutura que ajuda as equipes a trabalharem juntas. Ele foi criado para transformar problemas e projetos complexos em soluções simples e mais rápidas de alcançar. É um Método Ágil que organiza de forma estratégica o trabalho em equipe.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close-modal" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
